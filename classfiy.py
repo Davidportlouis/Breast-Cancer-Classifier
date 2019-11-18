@@ -27,7 +27,7 @@ print("Accuracy :" + str(classifier.score(validation_test,validation_labels)) )
 
 test_sample = np.array([[13.54,14.36,87.46,566.3,0.09779,0.08129,0.06664,0.04781,0.1885,0.05766,0.2699,0.7886,2.058,23.56,0.008462,0.0146,0.02387,0.01315,0.0198,0.0023,15.11,19.26,99.7,711.2,0.144,0.1773,0.239,0.1288,0.2977,0.07259]])
 y_pred_new = classifier.predict(test_sample)
-if y_pred_new == 1:
+if y_pred_new == 1: # predicts the probability of cancer
     print("Malignant")
 elif y_pred_new == 0:
     print("Benigne")
